@@ -1,6 +1,6 @@
 package org.incorp.i;
 
-public class Robot implements Compit{
+public class Robot implements Compit {
     private int maxRun;
     private int maxJump;
 
@@ -8,16 +8,20 @@ public class Robot implements Compit{
         this.maxRun = maxRun;
         this.maxJump = maxJump;
     }
-    public Robot(){this(20, 20);};
+
+    public Robot() {
+        this(20, 20);
+    }
+
+    ;
 
 
     @Override
-    public boolean run(int dist){
-        if (dist<=maxRun){
+    public boolean run(int dist) {
+        if (dist <= maxRun) {
             System.out.println("Robot probeshall" + dist);
             return true;
-        }
-        else{
+        } else {
             System.out.println("Robot not run");
             return false;
         }
@@ -25,12 +29,11 @@ public class Robot implements Compit{
 
 
     @Override
-    public boolean jump(int dist){
-        if (dist<=maxJump){
+    public boolean jump(int dist) {
+        if (dist <= maxJump) {
             System.out.println("Robot prignull " + dist);
             return true;
-        }
-        else{
+        } else {
             System.out.println("Robot not prignull " + dist);
             return false;
         }

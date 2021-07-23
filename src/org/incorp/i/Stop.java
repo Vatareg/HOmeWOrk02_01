@@ -1,5 +1,5 @@
 package org.incorp.i;
 
 public interface Stop {
-    boolean goGo (Compit i);
+    boolean goGo(Compit i);
 }

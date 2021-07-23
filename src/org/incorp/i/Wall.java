@@ -1,6 +1,6 @@
 package org.incorp.i;
 
-public class Wall implements Stop{
+public class Wall implements Stop {
     private int up;
 
     public Wall(int up) {
