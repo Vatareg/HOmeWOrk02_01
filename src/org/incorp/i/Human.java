@@ -8,16 +8,20 @@ public class Human implements Compit {
         this.maxRun = maxRun;
         this.maxJump = maxJump;
     }
-    public Human(){this(20, 20);};
+
+    public Human() {
+        this(20, 20);
+    }
+
+    ;
 
 
     @Override
-    public boolean run(int dist){
-        if (dist<=maxRun){
+    public boolean run(int dist) {
+        if (dist <= maxRun) {
             System.out.println("Human probeshall" + dist);
             return true;
-        }
-        else{
+        } else {
             System.out.println("Human not run");
             return false;
         }
@@ -25,12 +29,11 @@ public class Human implements Compit {
 
 
     @Override
-    public boolean jump(int dist){
-        if (dist<=maxJump){
+    public boolean jump(int dist) {
+        if (dist <= maxJump) {
             System.out.println("Human prignull " + dist);
             return true;
-        }
-        else{
+        } else {
             System.out.println("Human not prignull " + dist);
             return false;
         }

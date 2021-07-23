@@ -1,6 +1,6 @@
 package org.incorp.i;
 
-public class Cat implements Compit{
+public class Cat implements Compit {
     private int maxRun;
     private int maxJump;
 
@@ -8,26 +8,28 @@ public class Cat implements Compit{
         this.maxRun = maxRun;
         this.maxJump = maxJump;
     }
-    public Cat() {this(10, 10);}
+
+    public Cat() {
+        this(10, 10);
+    }
+
     @Override
-    public boolean run(int dist){
-        if (dist<=maxRun){
+    public boolean run(int dist) {
+        if (dist <= maxRun) {
             System.out.println("Cat probeshall" + dist);
             return true;
-        }
-        else{
+        } else {
             System.out.println("Cat not run");
             return false;
         }
     }
 
     @Override
-    public boolean jump(int dist){
-        if (dist<=maxJump){
+    public boolean jump(int dist) {
+        if (dist <= maxJump) {
             System.out.println("Cat prignull " + dist);
             return true;
-        }
-        else{
+        } else {
             System.out.println("Cat not prignull " + dist);
             return false;
         }

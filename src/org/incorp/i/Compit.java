@@ -1,7 +1,8 @@
 package org.incorp.i;
 
-public interface Compit{
+public interface Compit {
     boolean run(int dis);
+
     boolean jump(int dist);
 
 }

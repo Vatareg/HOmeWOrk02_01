@@ -1,8 +1,9 @@
 package org.incorp.i;
 
-public class Runroud implements Stop{
+public class Runroud implements Stop {
     private int dist;
-    public Runroud(int dist){
+
+    public Runroud(int dist) {
         this.dist = dist;
     }
 
